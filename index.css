@@ -38,12 +38,12 @@ header {
 }
 
 .navigation {
-    width: 60%;
+    width: 50%;
 }
 
 .navigation li {
-    font-size: 1.2em;
-    width: 24%;
+    font-size: 1em;
+    width: 15%;
     text-align: center;
 }
 
@@ -51,6 +51,7 @@ header {
     text-decoration: none;
     color: inherit;
     transition: all 200ms ease-in;
+    text-align: center;
 }
 
 .navigation li a:hover {
@@ -59,10 +60,12 @@ header {
 
 .navigation li a:hover::before {
     content: '/';
+    color: #FF6821;
 }
 
 .navigation li a:hover::after {
     content: '/';
+    color: #FF6821;
 }
 
 nav {
@@ -260,16 +263,18 @@ main {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    visibility: hidden;
+    transition: all 1000ms;
+    opacity: 0;
 }
 
 .card-trabajo:hover .sombra-card{
-    visibility: initial;
+    opacity: 1;
 }
 
 .titulo-card{
     font-size: 2em;
     font-family: 'Notable', sans-serif;
+    transition: font-size 2000ms;
 }
 
 .contenedor-parrafo-btn-card{
@@ -348,7 +353,38 @@ main {
     color: #5851db;
 }
 
-
+.linkedin{
+    color:#0077b5
+}
 .container-icons-contacto a i:hover {
     color: #FF6821
+}
+
+.section-podcast{
+    margin-top: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-podcast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.container-podcast a {
+    width: 20%;
+}
+
+.container-podcast iframe {
+    width: 30%;
+}
+
+.img-portada{
+    width: 100%;
 }
